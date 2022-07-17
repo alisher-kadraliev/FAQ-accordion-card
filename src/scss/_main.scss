@@ -1,0 +1,272 @@
+.accordion {
+    .accordion__item {
+        border-bottom: 1px solid $border;
+
+        &.accordion__item-active {
+            .accordion__item-content {
+                display: block;
+            }
+
+            .line2 {
+                transform: translate(0) !important;
+                transition: .1s all ease;
+            }
+
+            .line1 {
+                opacity: 0;
+                transition: .1s all ease;
+
+            }
+        }
+
+
+        .accordion__item-trigger {
+            gap: 100px;
+            display: flex;
+            padding: 20px 0;
+            align-items: center;
+            cursor: pointer;
+
+
+
+            .trigger__text {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: 0.035em;
+                color: $text;
+
+                &:hover {
+                    color: $titleHover;
+
+                }
+
+
+
+            }
+
+
+
+            .trigger__img {
+                margin-left: auto;
+
+
+            }
+        }
+
+        .accordion__item-content {
+            padding-bottom: 20px;
+            display: none;
+            animation: fade .3s ease;
+
+            .content__text {
+                color: $text;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+
+
+    }
+
+}
+
+.accordion__item-active .trigger__text h3 {
+    &::after {
+        font-weight: 700;
+        color: $titleFocus ;
+    }
+
+    &:hover {
+        font-weight: 700;
+        color: $titleFocus ;
+    }
+}
+
+.accordion__item-active img {
+    transform: rotate(180deg);
+    transition: .3s all ease-in-out;
+}
+
+.img {
+    position: absolute;
+    left: -504px;
+    bottom: -378px;
+}
+
+.section {
+    &__main {
+        padding: 150px 0;
+        background: rgb(101, 101, 231);
+        background: linear-gradient(0deg, rgba(101, 101, 231, 1) 26%, rgba(175, 103, 233, 1) 64%);
+    }
+}
+
+.container {}
+
+.main {
+
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    height: 600px;
+    max-width: 1100px;
+    background: #fff;
+    // .main__item
+    border-radius: 20px;
+
+    background-image: url(../img/bg-pattern-desktop.svg);
+    z-index: 1111;
+    background-repeat: no-repeat;
+    background-position: -539px -230px;
+
+    // .main__img-box
+    @media(max-width: $breakpoint992) {
+        flex-direction: column;
+        background-image: none;
+        z-index: none;
+        background-repeat: none;
+        background-position: none;
+        padding-bottom: 100px;
+    }
+
+    &__img-box {
+        position: absolute;
+        left: 210px;
+        bottom: 256px;
+
+        @media(max-width: $breakpoint992) {
+            display: none;
+        }
+    }
+
+    // .main__title
+
+    &__title {
+        line-height: 20px;
+        font-size: 40px;
+        padding-bottom: 20px;
+        font-weight: bold;
+
+    }
+
+    // .main__list
+
+    &__list {}
+}
+.box{
+ 
+position: relative;
+}
+.pattern {
+    display: none;
+
+    @media(max-width: $breakpoint992) {
+        display: block;
+        position: absolute;
+    top: -293px;
+        left: 303px;
+        max-width: 550px;
+        z-index: 111;
+    }
+}
+
+.woman2 {
+    display: none;
+
+    @media(max-width: $breakpoint992) {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 150px;
+        max-width: 300px;
+        z-index: 1111;
+    }
+}
+
+.woman {
+    position: absolute;
+    left: 240px;
+    bottom: 200px;
+
+    @media(max-width: $breakpoint992) {
+        display: none;
+    }
+}
+
+.line {
+    position: absolute;
+    left: -50px;
+    max-width: 800px;
+    bottom: 20px;
+
+}
+
+.img {
+    position: relative;
+    // .img__wrapper
+
+    &__wrapper {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.side {
+
+    // .side__left
+
+    &__left {}
+
+    // .side__right
+
+    &__right {}
+}
+
+.accordion {
+
+    // .accordion__item
+
+    &__item {}
+
+    // .accordion__item-trigger
+
+    &__item-trigger {}
+
+    // .accordion__item-content
+
+    &__item-content {}
+}
+
+.trigger {
+
+    // .trigger__num
+
+    &__num {}
+
+    // .trigger__text
+
+    &__text {}
+
+    // .trigger__img
+
+    &__img {}
+}
+
+.line1 {}
+
+.line2 {}
+
+.content {
+
+    // .content__text
+
+    &__text {}
+}

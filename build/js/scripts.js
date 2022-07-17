@@ -1,3 +1,4 @@
+// Custom Scripts
 // Custom scripts
 // Аккордеон
 function accordion() {

@@ -24,6 +24,8 @@
 
 // Body Locked
 body {
+    font-family: "Kumbh Sans";
+font-size: 12px;
     &.locked {
         overflow: hidden;
     }
