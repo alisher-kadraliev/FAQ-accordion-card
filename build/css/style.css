@@ -218,7 +218,7 @@ body.locked {
       -ms-flex-align: center;
           align-items: center;
   gap: 300px;
-  height: 600px;
+  height: 700px;
   max-width: 1100px;
   background: #fff;
   border-radius: 20px;
@@ -230,8 +230,8 @@ body.locked {
 
 .main__img-box {
   position: absolute;
-  left: 210px;
-  bottom: 256px;
+  left: 28px;
+  bottom: 203px;
 }
 
 .main__title {
@@ -255,8 +255,8 @@ body.locked {
 
 .woman {
   position: absolute;
-  left: 240px;
-  bottom: 200px;
+  left: -265px;
+  bottom: -173px;
 }
 
 .line {
@@ -304,10 +304,10 @@ body.locked {
   }
 
   .pattern {
-    display: block;
+    display: inline-block;
     position: absolute;
-    top: -293px;
-    left: 303px;
+    top: -245px;
+    left: 378px;
     max-width: 550px;
     z-index: 111;
   }
@@ -315,9 +315,9 @@ body.locked {
   .woman2 {
     display: inline-block;
     position: absolute;
-    top: 0;
-    left: 150px;
-    max-width: 300px;
+    top: 44px;
+    left: 58px;
+    max-width: 250px;
     z-index: 1111;
   }
 
@@ -335,5 +335,25 @@ body.locked {
 @media (max-width: 479.98px) {
   .container {
     max-width: none;
+  }
+
+  .accordion .accordion__item .accordion__item-trigger {
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .accordion .accordion__item .accordion__item-trigger .trigger__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .accordion .accordion__item .accordion__item-content .content__text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main__title {
+    font-size: 34px;
+    text-align: center;
   }
 }
